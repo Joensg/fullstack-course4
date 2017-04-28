@@ -1,15 +1,64 @@
 /*--- Base Styles ---*/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "sans-serif", "arial", "courier";
 }
 
 h1 {
+  font-size: 1.75em;
+  margin-top: 15px;
   margin-bottom: 15px;
+  text-align: center;
+}
+
+section {
+  position: relative;
+  border: 1px solid black;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  background-color: #8e8e8e;
+}
+
+p {
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  border: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  padding: 5px 30px 5px 30px;
+  font-size: 1.25em;
+}
+
+#chicken {
+  background-color: #cf8d8d;
+}
+
+#beef {
+  background-color: #b93c3b;
+}
+
+#sushi {
+  background-color: #e1cb8d;
 }
 
 /*--- Simple Responsive Framework ---*/
 .row {
   width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /*--- Desktop Devices Only (width >= 992px) ---*/
@@ -17,7 +66,6 @@ h1 {
   .col-dt-1, .col-dt-2, .col-dt-3, .col-dt-4, .col-dt-5, .col-dt-6,
   .col-dt-7, .col-dt-8, .col-dt-9, .col-dt-10, .col-dt-11, .col-dt-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-dt-1 {
     width: 8.33%;
@@ -29,7 +77,7 @@ h1 {
     width: 25%;
   }
   .col-dt-4 {
-    width: 33%;
+    width: 33.33%;
   }
   .col-dt-5 {
     width: 41.66%;
@@ -62,7 +110,6 @@ h1 {
   .col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6,
   .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-tb-1 {
     width: 8.33%;
@@ -74,7 +121,7 @@ h1 {
     width: 25%;
   }
   .col-tb-4 {
-    width: 33%;
+    width: 33.33%;
   }
   .col-tb-5 {
     width: 41.66%;
@@ -107,7 +154,6 @@ h1 {
   .col-mb-1, .col-mb-2, .col-mb-3, .col-mb-4, .col-mb-5, .col-mb-6,
   .col-mb-7, .col-mb-8, .col-mb-9, .col-mb-10, .col-mb-11, .col-mb-12 {
     float: left;
-    border: 1px solid black;
   }
   .col-mb-1 {
     width: 8.33%;
@@ -119,7 +165,7 @@ h1 {
     width: 25%;
   }
   .col-mb-4 {
-    width: 33%;
+    width: 33.33%;
   }
   .col-mb-5 {
     width: 41.66%;
